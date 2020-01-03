@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using System.Collections.Generic;
+using UnityEngine.UI;
 
 public class BoardManager : MonoBehaviour 
 {
@@ -96,7 +97,7 @@ public class BoardManager : MonoBehaviour
 				if (c.GetType () == typeof(King))
 				{
 
-
+					BoardHighlights.Instance.Hidehighlights();
 					EndGame ();
 					return;
 				}
@@ -275,14 +276,9 @@ public class BoardManager : MonoBehaviour
 		}
 	
 	}
-
-	private void EndGame ()
+		
+	public void RestartGame()
 	{
-		if (isWhiteTrue)
-			Debug.Log ("White team wins");
-		else
-			Debug.Log ("Black team wins");
-
 		foreach (GameObject go in activeChessman)
 			Destroy (go);
 
@@ -291,4 +287,26 @@ public class BoardManager : MonoBehaviour
 		SpawnAllChessman ();
 	}
 
+
+	public Text LostText;
+	public Button RestartBtn;
+	public Button ExitBtn;
+
+	private void EndGame ()
+	{
+		LostText.gameObject.SetActive(true);
+		RestartBtn.gameObject.SetActive (true);
+		ExitBtn.gameObject.SetActive (true);
+
+		if (isWhiteTrue) 
+		{
+			LostText.text = "Победили белые";
+
+		}
+		else 
+		{
+			LostText.text = "Победили черные";
+		}
+		//RestartGame ();
+	}
 }

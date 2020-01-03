@@ -54,10 +54,13 @@
      <Compile Include="Assets\Scripts\Bishop.cs" />
      <Compile Include="Assets\Scripts\BoardHighlights.cs" />
      <Compile Include="Assets\Scripts\BoardManager.cs" />
+     <Compile Include="Assets\Scripts\CameraMovement.cs" />
      <Compile Include="Assets\Scripts\Chessman.cs" />
      <Compile Include="Assets\Scripts\King.cs" />
      <Compile Include="Assets\Scripts\Knight.cs" />
+     <Compile Include="Assets\Scripts\MouseDrag.cs" />
      <Compile Include="Assets\Scripts\MoveCamer.cs" />
+     <Compile Include="Assets\Scripts\MyGameManager.cs" />
      <Compile Include="Assets\Scripts\Pawn.cs" />
      <Compile Include="Assets\Scripts\Queen.cs" />
      <Compile Include="Assets\Scripts\Rook.cs" />

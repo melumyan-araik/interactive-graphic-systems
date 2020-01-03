@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 33136804973259800}
   - component: {fileID: 23109881993607904}
   - component: {fileID: 114840882203516468}
+  - component: {fileID: 65778124604019730}
   m_Layer: 0
   m_Name: PawnWhite
   m_TagString: Untagged
@@ -83,6 +84,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1319174622319054}
   m_Mesh: {fileID: 4300012, guid: fbcbee3ea2493104fb5e8a82575656d5, type: 3}
+--- !u!65 &65778124604019730
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1319174622319054}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.0062666973, y: 0.0062666964, z: 0.010093155}
+  m_Center: {x: 0, y: -3.492459e-10, z: 0.0050465777}
 --- !u!114 &114840882203516468
 MonoBehaviour:
   m_ObjectHideFlags: 1
