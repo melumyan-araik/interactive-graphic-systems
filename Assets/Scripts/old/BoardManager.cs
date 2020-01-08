@@ -22,9 +22,6 @@ public class BoardManager : MonoBehaviour
 	public List<GameObject> chessmanPrefabs;
 	private List<GameObject> activeChessman;
 
-	//private Material previousMat;
-	//public Material selectedMat;
-
 	public int[] EnPassantMove { set; get;}
 
 	private Quaternion orientation = Quaternion.Euler(-90, 0, 0);
@@ -157,6 +154,9 @@ public class BoardManager : MonoBehaviour
 
 		BoardHighlights.Instance.Hidehighlights ();
 		selectedChessman = null;
+
+
+
 	}
 
 	private void UpdateSelection ()
@@ -274,6 +274,8 @@ public class BoardManager : MonoBehaviour
 				Vector3.forward * (selectionY + 1) + Vector3.right * (selectionX + 1)
 			);
 		}
+
+		Debug.Log(selectionX + " " + selectionY);
 	
 	}
 		

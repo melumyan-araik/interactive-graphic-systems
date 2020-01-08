@@ -21,7 +21,6 @@ GameObject:
   - component: {fileID: 4649459458721364}
   - component: {fileID: 33652316792897038}
   - component: {fileID: 23593437260493712}
-  - component: {fileID: 114043743619272382}
   m_Layer: 0
   m_Name: RookBlack
   m_TagString: Untagged
@@ -83,15 +82,3 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1665455557485952}
   m_Mesh: {fileID: 4300000, guid: fbcbee3ea2493104fb5e8a82575656d5, type: 3}
---- !u!114 &114043743619272382
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1665455557485952}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f2ac2387aebda243a43c6e281d6f523, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isWhite: 0

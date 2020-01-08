@@ -21,7 +21,6 @@ GameObject:
   - component: {fileID: 4659159824418262}
   - component: {fileID: 33137979468793156}
   - component: {fileID: 23610681614779980}
-  - component: {fileID: 114474563792925694}
   m_Layer: 0
   m_Name: PawnBlack
   m_TagString: Untagged
@@ -83,15 +82,3 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1265010659281310}
   m_Mesh: {fileID: 4300010, guid: fbcbee3ea2493104fb5e8a82575656d5, type: 3}
---- !u!114 &114474563792925694
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1265010659281310}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cb768d5bfb3255f41b831738b5b2b649, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isWhite: 0

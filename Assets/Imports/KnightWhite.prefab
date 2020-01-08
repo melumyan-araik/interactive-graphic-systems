@@ -21,7 +21,6 @@ GameObject:
   - component: {fileID: 4400701355660724}
   - component: {fileID: 33003387088146020}
   - component: {fileID: 23611002556584462}
-  - component: {fileID: 114233008571553290}
   m_Layer: 0
   m_Name: KnightWhite
   m_TagString: Untagged
@@ -83,15 +82,3 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1356428799835694}
   m_Mesh: {fileID: 4300020, guid: fbcbee3ea2493104fb5e8a82575656d5, type: 3}
---- !u!114 &114233008571553290
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1356428799835694}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e335367cba5a4954ab661fe32f2258db, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isWhite: 1

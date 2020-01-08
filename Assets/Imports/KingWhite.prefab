@@ -21,7 +21,6 @@ GameObject:
   - component: {fileID: 4909224649049984}
   - component: {fileID: 33640758045966684}
   - component: {fileID: 23803361249654922}
-  - component: {fileID: 114131243155924170}
   m_Layer: 0
   m_Name: KingWhite
   m_TagString: Untagged
@@ -83,15 +82,3 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1946749030164662}
   m_Mesh: {fileID: 4300014, guid: fbcbee3ea2493104fb5e8a82575656d5, type: 3}
---- !u!114 &114131243155924170
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1946749030164662}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0d9eb2eee3553fb4a8130c85c02cf417, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isWhite: 1
