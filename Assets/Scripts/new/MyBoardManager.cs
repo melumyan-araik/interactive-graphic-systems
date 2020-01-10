@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Threading;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -22,28 +21,23 @@ public class MyBoardManager : MonoBehaviour
 
     public List<GameObject> chessmanSet;
     public GameObject highlight;
-
-    private static Chess.Chess chess;
-    private string AiMove;
-    private int click;
-    private string from;
-    private string to;
-    private string figure;
-    private string color;
-    private static Stockfish stockfish;
-
+    public Chess.Chess chess;
+    public int click;
+    public string from;
+    public string to;
+    public string figure;
+    public string color;
 
     void Start()
     {
         Instance = this;
         chess = new Chess.Chess();
-        stockfish = new Stockfish();
         color = chess.fen.Split()[1];
         SpawnAllChessman();
 
 
     }
-    static object locker = new object();
+
     void Update()
     {
         UpdateSelection();
@@ -71,17 +65,6 @@ public class MyBoardManager : MonoBehaviour
                         chess = chess.Move(move);
                         var newFen = chess.fen;
 
-                        //Thread myThread = new Thread(new ThreadStart(newThred));
-                        //myThread.Start(); // запускаем поток
-
-                        //figure = chess.GetFigureAt(GetCoordinate(AiMove[0] + AiMove[1] + "")[0], GetCoordinate(AiMove[0] + AiMove[1] + "")[1]).ToString();
-                        //from = AiMove[0] + AiMove[1] + "";
-                        //to = AiMove[2] + AiMove[3] + "";
-                        //move = figure + from + to;
-                        //fen = chess.fen;
-                        //chess = chess.Move(move);
-                        //newFen = chess.fen;
-
                         if (fen != newFen)
                         {
                             SpawnAllChessman();
@@ -89,6 +72,7 @@ public class MyBoardManager : MonoBehaviour
                             click = 0;
                             DestroyHighlight();
                             color = color == "b" ? "w" : "b";
+
                         }
                     }
                     break;
@@ -105,14 +89,6 @@ public class MyBoardManager : MonoBehaviour
             click = 0;
             DestroyHighlight();
             SpawnAllChessman();
-        }
-    }
-
-    void newThred()
-    {
-        lock (locker)
-        {
-            AiMove = stockfish.BestMove(chess.fen);
         }
     }
 
@@ -191,7 +167,7 @@ public class MyBoardManager : MonoBehaviour
         }
     }
 
-    private void DrawAllHighlight(ref List<string> moves)
+    public void DrawAllHighlight(ref List<string> moves)
     {
         foreach (var i in moves)
         {
@@ -206,7 +182,7 @@ public class MyBoardManager : MonoBehaviour
         go.transform.SetParent(transform);
     }
 
-    private void DestroyHighlight()
+    public void DestroyHighlight()
     {
         GameObject board = GameObject.Find("ChessBoard");
         foreach (Transform child in board.transform)
@@ -224,7 +200,7 @@ public class MyBoardManager : MonoBehaviour
 
     }
 
-    private void SpawnAllChessman()
+    public void SpawnAllChessman()
     {
         DestroyAllChessman();
         for (int y = 0; y < 8; y++)
@@ -307,7 +283,7 @@ public class MyBoardManager : MonoBehaviour
         return ((char)('a' + selectionX)).ToString() + (selectionY + 1).ToString();
     }
 
-    private int[] GetCoordinate(string move)
+    public int[] GetCoordinate(string move)
     {
         return new int[2] { Convert.ToInt32((char)(move[0]) - 'a'), Convert.ToInt32(move[1] - '0') - 1 };
     }
@@ -343,15 +319,16 @@ public class MyBoardManager : MonoBehaviour
     public Text CheckText;
     public Button RestartBtn;
     public Button ExitBtn;
-    public Button AIMove;
+    public Button AI;
 
-    private void IsCheckMate()
+    public void IsCheckMate()
     {
         if (chess.IsShah() && chess.GetAllMoves().Count == 0)
         {
             LostText.gameObject.SetActive(true);
             RestartBtn.gameObject.SetActive(true);
             ExitBtn.gameObject.SetActive(true);
+            AI.gameObject.SetActive(false);
         }
         else if (chess.IsShah())
         {
@@ -362,33 +339,5 @@ public class MyBoardManager : MonoBehaviour
             CheckText.gameObject.SetActive(false);
         }
     }
-
-    public void MoveAI()
-    {
-        
-        Thread myThread = new Thread(new ThreadStart(newThred));
-        myThread.Start(); // запускаем поток
-
-        figure = chess.GetFigureAt(GetCoordinate(AiMove[0] + AiMove[1] + "")[0], GetCoordinate(AiMove[0] + AiMove[1] + "")[1]).ToString();
-        from = AiMove[0] + AiMove[1] + "";
-        to = AiMove[2] + AiMove[3] + "";
-        string move = figure + from + to;
-        var fen = chess.fen;
-        chess = chess.Move(move);
-        Debug.Log(move);
-        var newFen = chess.fen;
-
-
-        if (fen != newFen)
-        {
-            SpawnAllChessman();
-            IsCheckMate();
-            click = 0;
-            DestroyHighlight();
-            color = color == "b" ? "w" : "b";
-        }
-
-    }
-
 
 }

@@ -55,6 +55,7 @@
      <Compile Include="Assets\Scripts\MouseDrag.cs" />
      <Compile Include="Assets\Scripts\MoveCamer.cs" />
      <Compile Include="Assets\Scripts\MyGameManager.cs" />
+     <Compile Include="Assets\Scripts\new\AI.cs" />
      <Compile Include="Assets\Scripts\new\Game.cs" />
      <Compile Include="Assets\Scripts\new\MyBoardManager.cs" />
      <Compile Include="Assets\Scripts\new\Stockfish.cs" />

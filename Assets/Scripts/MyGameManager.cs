@@ -9,6 +9,7 @@ using UnityEngine.SceneManagement;
 
 
 public class MyGameManager : MonoBehaviour {
+
 	public void RestartGame()
 	{
 		SceneManager.LoadScene("ChessGame");
@@ -23,7 +24,10 @@ public class MyGameManager : MonoBehaviour {
 	{
 		if (Input.GetKey("escape"))
 		{
-			Application.Quit();			
+            Application.Quit();			
 		}
 	}
+
+
+
 }

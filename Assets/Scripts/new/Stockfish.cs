@@ -1,28 +1,66 @@
 ﻿using System;
+using System.Collections;
+using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
-using System.Threading;
+using UnityEngine;
 
-public class Stockfish
-{
-     string str;
-     string pathStockfis = Directory.GetCurrentDirectory() + "\\Assets\\stockfish\\StockfishManager.exe";
-
-    //RunSingleFile(Directory.GetCurrentDirectory() + "\\stockfish.exe", "");
-
-    public  string BestMove(string fen)
+public class Stockfish : MonoBehaviour {
+    string str;
+    string pathStockfis;
+    Process processToRun;
+    public Stockfish()
     {
-        Process processToRun = new Process();
+        str = "none";
+        pathStockfis = Directory.GetCurrentDirectory() + "\\Assets\\stockfish\\stockfish.exe";
+
+        processToRun = new Process();
         processToRun.StartInfo.FileName = pathStockfis;
-        processToRun.StartInfo.Arguments = fen;
+        //processToRun.StartInfo.Arguments = fen;
         processToRun.StartInfo.UseShellExecute = false;
         processToRun.StartInfo.CreateNoWindow = true;
         processToRun.StartInfo.RedirectStandardOutput = true;
         processToRun.StartInfo.RedirectStandardInput = true;
         processToRun.Start();
-        str = processToRun.StandardOutput.ReadLine();
-        processToRun.Close();
+    }
+
+    public string BestMove(string fen)
+    {
+        String setupString = "position fen " + fen;
+        processToRun.StandardInput.WriteLine(setupString);
+
+        String processString = "go movetime 1000";
+        processToRun.StandardInput.WriteLine(processString);
+
+        do
+        {
+            str = processToRun.StandardOutput.ReadLine();
+            BestMove();
+        } while (BestMove() == "none");
+ 
+        int n = str.IndexOf("bestmove");
+        if (n != -1)
+        {
+            str = str.Substring(n + 9, 4);
+        }
+
         return str;
     }
+
+    ~Stockfish()
+    {
+        processToRun.Close();
+    }
+
+    private string BestMove()
+    {
+        int n = str.IndexOf("bestmove");
+        if (n != -1)
+        {
+            return str.Substring(n + 9, 4);
+        }
+        return "none";
+    }
+
 
 }

@@ -1,6 +1,6 @@
 WindowsStandalone
 PlayerPath?
-C:/Users/melumyan/Desktop/test.exe
+C:/Users/melumyan/Desktop/chessAddAI.exe
 SceneListBegin?
 Assets/Scenes/ChessGame.unity
 SceneListEnd?
@@ -156,8 +156,10 @@ c2275a8bfbb9f9942cad75ecdfded41d UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.Spa
 b6b9fc3e8b61eb930c8245c922bb084d Assembly-CSharp.dll:.BoardManager
 9de3a22eca9aefadba2d10d5987cefe3 UnityEngine.SpatialTracking.dll:UnityEngine.SpatialTracking.TrackedPoseDriver
 4b45222ba650bdebe23aa58461bb9b7c Assembly-CSharp.dll:.Knight
-f93759bded2b6451ff075d28512d4410 Assembly-CSharp.dll:.MyBoardManager
+6bad627368d3222086481a55c6746534 Assembly-CSharp.dll:.MyBoardManager
 4b45222ba650bdebe23aa58461bb9b7c Assembly-CSharp.dll:.King
 4b45222ba650bdebe23aa58461bb9b7c Assembly-CSharp.dll:.Queen
 7f266f22e23c68a8366af12f3e363e2b Assembly-CSharp.dll:.MoveCamer
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.Scroll
+66dd099eea96b0b7e8779a62c5b4dc3b Assembly-CSharp.dll:.AI
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.Stockfish
