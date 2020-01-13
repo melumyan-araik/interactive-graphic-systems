@@ -28,8 +28,17 @@ public class AI : MonoBehaviour {
                     MyBoardManager.Instance.GetCoordinate("" + str[0] + str[1])[0],
                     MyBoardManager.Instance.GetCoordinate("" + str[0] + str[1])[1]
             ).ToString();
-        string move = MyBoardManager.Instance.figure + str;
 
+        string move = MyBoardManager.Instance.figure + str;
+        if (move[0] == 'p' && move[4] == '1')
+        {
+            move = move + "q";
+        }
+        else if (move[0] == 'P' && move[4] == '8')
+        {
+            move = move + "Q";
+
+        }
         var fen = MyBoardManager.Instance.chess.fen;
 
         MyBoardManager.Instance.chess = MyBoardManager.Instance.chess.Move(move);

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
 using UnityEngine.UI;
+using Chess;
 
 public class MyBoardManager : MonoBehaviour
 {
@@ -60,7 +61,21 @@ public class MyBoardManager : MonoBehaviour
                     if (selectionX >= 0 && selectionY >= 0 && chess.fen.Split()[1] == color)
                     {
                         to = GetSquare();
-                        string move = figure + from + to;
+                        string move;
+                        if (figure == "p" && to[1] == '1')
+                        {
+                            move = figure + from + to + "q";
+                        }
+                        else if (figure == "P" && to[1] == '8')
+                        {
+                            move = figure + from + to + "Q";
+
+                        }
+                        else
+                        {
+                            move = figure + from + to;
+                        }
+
                         var fen = chess.fen;
                         chess = chess.Move(move);
                         var newFen = chess.fen;
