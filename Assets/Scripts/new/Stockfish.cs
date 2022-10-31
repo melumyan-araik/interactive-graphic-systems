@@ -4,6 +4,9 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
 using UnityEngine;
+using System.Threading;
+using System.Threading.Tasks;
+
 
 public class Stockfish : MonoBehaviour {
     string str;
@@ -12,7 +15,7 @@ public class Stockfish : MonoBehaviour {
     public Stockfish()
     {
         str = "none";
-        pathStockfis = Directory.GetCurrentDirectory() + "\\Assets\\stockfish\\stockfish.exe";
+        pathStockfis = Path.Combine(Directory.GetCurrentDirectory(), "Stockfish", "stockfish.exe");
 
         processToRun = new Process();
         processToRun.StartInfo.FileName = pathStockfis;
@@ -45,6 +48,11 @@ public class Stockfish : MonoBehaviour {
         }
 
         return str;
+    }
+
+    public Task<string> BestMoveAsync(string fen)
+    {
+        return Task.Run(() => BestMove(fen));
     }
 
     ~Stockfish()

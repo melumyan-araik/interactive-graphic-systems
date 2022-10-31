@@ -5,6 +5,8 @@ using UnityEditor.VersionControl;
 #endif
 using UnityEngine;
 using UnityEngine.UI;
+using System.Threading;
+using System.Threading.Tasks;
 
 public class AI : MonoBehaviour {
 
@@ -20,11 +22,11 @@ public class AI : MonoBehaviour {
     }
 
 
-    public void MoveAi()
+    public async void MoveAi()
     {
         str = MyBoardManager.Instance.chess.fen;
 
-        str = stockfish.BestMove(str);
+        str = await stockfish.BestMoveAsync(str);
 
         MyBoardManager.Instance.figure = MyBoardManager.Instance.chess.GetFigureAt(
                     MyBoardManager.Instance.GetCoordinate("" + str[0] + str[1])[0],
