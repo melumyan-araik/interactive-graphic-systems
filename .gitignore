@@ -8,7 +8,7 @@ Library/
 # Visual Studio / MonoDevelop generated #
 # ===================================== #
 ExportedObj/
-obj/
+obj
 *.svd
 *.userprefs
 /*.csproj
@@ -18,7 +18,12 @@ obj/
 *.user
 *.unityproj
 *.booproj
-*.vs
+.vs/
+UserSettings/
+Logs/
+
+
+
 
 # ============ #
 # OS generated #

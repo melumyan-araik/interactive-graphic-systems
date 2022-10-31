@@ -724,3 +724,123 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 3736.395652 seconds.
+  path: Assets/unity-chan!/Art/Animations/unitychan_ARpose1.fbx
+  artifactKey: Guid(e8397bfde2758f942a04edaaf7ad57ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/unity-chan!/Art/Animations/unitychan_ARpose1.fbx using Guid(e8397bfde2758f942a04edaaf7ad57ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad35efc92e2d21404a136af6865b245b') in 1.546954 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000634 seconds.
+  path: Assets/unity-chan!/Art/Animations/unitychan_JUMP01.fbx
+  artifactKey: Guid(87486f7b16eedbf4eb26567d70189058) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/unity-chan!/Art/Animations/unitychan_JUMP01.fbx using Guid(87486f7b16eedbf4eb26567d70189058) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '82980a1185670fbafaa15c89d8e43f22') in 0.853391 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000081 seconds.
+  path: Assets/unity-chan!/Art/Animations/unitychan_LOSE00.fbx
+  artifactKey: Guid(c7df2ec8d896a4a15abc7636d440631b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/unity-chan!/Art/Animations/unitychan_LOSE00.fbx using Guid(c7df2ec8d896a4a15abc7636d440631b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67dde19ffc6a196c52d08a443aa18cfd') in 0.159093 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000070 seconds.
+  path: Assets/unity-chan!/Art/Animations/unitychan_WALK00_R.fbx
+  artifactKey: Guid(dbc663f7e83140241a679da3ca9063b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/unity-chan!/Art/Animations/unitychan_WALK00_R.fbx using Guid(dbc663f7e83140241a679da3ca9063b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a697f658d4358fbfc2cd9d305276eff7') in 0.181079 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000068 seconds.
+  path: Assets/unity-chan!/Art/Models/unitychan.fbx
+  artifactKey: Guid(8f0565f23a2b58541a475bd3c1393052) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/unity-chan!/Art/Models/unitychan.fbx using Guid(8f0565f23a2b58541a475bd3c1393052) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '331f3f2855b42c13024debc9933ac8e5') in 0.545360 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000073 seconds.
+  path: Assets/unity-chan!/Art/Animations/unitychan_DAMAGED01.fbx
+  artifactKey: Guid(c895dff4365ad4506ab680fdc4a0afb8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/unity-chan!/Art/Animations/unitychan_DAMAGED01.fbx using Guid(c895dff4365ad4506ab680fdc4a0afb8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '149ebd2b07c86c5e548f89573da0558d') in 0.136517 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000056 seconds.
+  path: Assets/unity-chan!/Art/Animations/unitychan_WAIT04.fbx
+  artifactKey: Guid(685e1a7587d604fd8a8a0a56834063bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/unity-chan!/Art/Animations/unitychan_WAIT04.fbx using Guid(685e1a7587d604fd8a8a0a56834063bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8544e6fe5d32cea3d458823d48a74062') in 0.178250 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000071 seconds.
+  path: Assets/unity-chan!/Art/Animations/unitychan_UMATOBI00.fbx
+  artifactKey: Guid(8bf916c92a6742d4ea62fd210c3fd0e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/unity-chan!/Art/Animations/unitychan_UMATOBI00.fbx using Guid(8bf916c92a6742d4ea62fd210c3fd0e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '173f727958438da4d7f0eb3d9db5f894') in 0.119349 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000092 seconds.
+  path: Assets/unity-chan!/Art/Animations/unitychan_WAIT01.fbx
+  artifactKey: Guid(1e79f5e733df84044a45d6ab05035627) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/unity-chan!/Art/Animations/unitychan_WAIT01.fbx using Guid(1e79f5e733df84044a45d6ab05035627) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8359d970746f0a132a56bf91dcabe2f6') in 0.151426 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000062 seconds.
+  path: Assets/unity-chan!/Art/Animations/unitychan_WALK00_F.fbx
+  artifactKey: Guid(e52be2fa48716194ea1d9d76686005f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/unity-chan!/Art/Animations/unitychan_WALK00_F.fbx using Guid(e52be2fa48716194ea1d9d76686005f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b2bc7160e2b98d63545fcd65a1b048d') in 0.126816 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000073 seconds.
+  path: Assets/unity-chan!/Art/Animations/unitychan_DAMAGED00.fbx
+  artifactKey: Guid(6dd5b57ca7c0d48e4b3e9061e1c88d18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/unity-chan!/Art/Animations/unitychan_DAMAGED00.fbx using Guid(6dd5b57ca7c0d48e4b3e9061e1c88d18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ce02939f8891a1127a78bd5c005c21b') in 0.123391 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000094 seconds.
+  path: Assets/unity-chan!/Art/Models/unitychan1.fbx
+  artifactKey: Guid(ac356a72f16365d4587983faaa491c7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/unity-chan!/Art/Models/unitychan1.fbx using Guid(ac356a72f16365d4587983faaa491c7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '722bf03e4d0d8acd06140cd56ce0e3e3') in 0.329431 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000068 seconds.
+  path: Assets/unity-chan!/Art/Animations/unitychan_JUMP00B.fbx
+  artifactKey: Guid(d6fd0c7048894427c8663615237d6a77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/unity-chan!/Art/Animations/unitychan_JUMP00B.fbx using Guid(d6fd0c7048894427c8663615237d6a77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd55140dd0a530f86d0da478b6e02bb57') in 0.133608 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000102 seconds.
+  path: Assets/unity-chan!/Art/Animations/unitychan_REFLESH00.fbx
+  artifactKey: Guid(842226a6a478847f9b6f5c746ae1cb95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/unity-chan!/Art/Animations/unitychan_REFLESH00.fbx using Guid(842226a6a478847f9b6f5c746ae1cb95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '39742383b3ecbc0ecd0864f3ece47972') in 0.149111 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/unity-chan!/Art/Animations/unitychan_WAIT02.fbx
+  artifactKey: Guid(e54e2e1fa0a994b389fe0654511fac47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/unity-chan!/Art/Animations/unitychan_WAIT02.fbx using Guid(e54e2e1fa0a994b389fe0654511fac47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db2ba1dcfc6b5c658e975cd2209117b2') in 0.187843 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000068 seconds.
+  path: Assets/unity-chan!/Art/Models/unitychan2.fbx
+  artifactKey: Guid(15a539fcfb3527e43a8a1f4497bdd00e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/unity-chan!/Art/Models/unitychan2.fbx using Guid(15a539fcfb3527e43a8a1f4497bdd00e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd252b4afb8e3d42b5f3651e21e69ea40') in 0.465176 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000119 seconds.
+  path: Assets/unity-chan!/Art/Models/unitychan.prefab
+  artifactKey: Guid(5a016f30bf67fdf4184e179861cbb37e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/unity-chan!/Art/Models/unitychan.prefab using Guid(5a016f30bf67fdf4184e179861cbb37e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f6e7cbfc2c457cb20401d5d6eeff032') in 0.463183 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000072 seconds.
+  path: Assets/unity-chan!/Art/Models/Plane.prefab
+  artifactKey: Guid(75b73e99e031852439454491c16bd8e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/unity-chan!/Art/Models/Plane.prefab using Guid(75b73e99e031852439454491c16bd8e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2df65b2741ff41be4b968e23cd246840') in 0.036727 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000069 seconds.
+  path: Assets/unity-chan!/Art/Models/unitychan2.prefab
+  artifactKey: Guid(ca781c316d229c94180a607145ebd8f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/unity-chan!/Art/Models/unitychan2.prefab using Guid(ca781c316d229c94180a607145ebd8f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1666070c561ee676535474eff9068748') in 0.409621 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000075 seconds.
+  path: Assets/unity-chan!/Art/Animations/unitychan_JUMP00.fbx
+  artifactKey: Guid(ac75d16809dc0054d8e3449e7ba665f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/unity-chan!/Art/Animations/unitychan_JUMP00.fbx using Guid(ac75d16809dc0054d8e3449e7ba665f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd24dd289bd663f2f50b2882cb6c72aa') in 0.130256 seconds 
